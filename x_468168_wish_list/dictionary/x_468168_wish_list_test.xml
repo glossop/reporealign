@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Test_ME" max_length="40" name="x_468168_wish_list_test" sizeclass="3" type="collection">
+        <element label="Affected Group" max_length="32" name="affected_group" reference="sys_user_group" type="reference"/>
+        <element label="Notes" max_length="1000" name="notes" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Proposed Date/Time" max_length="40" name="proposed_date_time" type="glide_date_time"/>
+        <element label="Server" max_length="32" name="server" reference="alm_hardware" type="reference"/>
+        <index name="index">
+            <element name="server"/>
+        </index>
+        <index name="index2">
+            <element name="affected_group"/>
+        </index>
+    </element>
+</database>
